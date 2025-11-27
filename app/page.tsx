@@ -236,27 +236,56 @@ export default function Chat() {
                     </p>
                   </div>
 
-                  {/* Quick Action Cards */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl mt-8">
-                    <div className="bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-2xl p-6 border border-white/40 dark:border-white/20 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1">
-                      <div className="text-3xl mb-3">💡</div>
-                      <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Get Ideas</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        Brainstorm creative solutions
-                      </p>
-                    </div>
-                    <div className="bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-2xl p-6 border border-white/40 dark:border-white/20 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1">
-                      <div className="text-3xl mb-3">🎯</div>
-                      <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Stay Focused</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        Organize tasks and priorities
-                      </p>
-                    </div>
-                    <div className="bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-2xl p-6 border border-white/40 dark:border-white/20 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1">
-                      <div className="text-3xl mb-3">🚀</div>
-                      <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Learn Fast</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        Explore topics in depth
+                  {/* Case Frameworks Card */}
+                  <div className="w-full max-w-2xl mt-8">
+                    <div className="bg-white/80 dark:bg-black/60 backdrop-blur-md rounded-2xl p-8 border border-white/40 dark:border-white/20 shadow-lg">
+                      <div className="bg-gradient-to-r from-blue-100 to-blue-50 dark:from-blue-900/50 dark:to-blue-800/50 rounded-xl p-6 mb-6 border-2 border-blue-200 dark:border-blue-700">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Case Frameworks</h2>
+                        <div className="flex items-start gap-8">
+                          {/* Framework Icon */}
+                          <div className="flex-shrink-0">
+                            <svg className="w-20 h-20 text-gray-900 dark:text-white" viewBox="0 0 100 100" fill="currentColor">
+                              <rect x="35" y="15" width="30" height="15" />
+                              <line x1="50" y1="30" x2="50" y2="45" stroke="currentColor" strokeWidth="3" />
+                              <line x1="50" y1="45" x2="25" y2="45" stroke="currentColor" strokeWidth="3" />
+                              <line x1="50" y1="45" x2="50" y2="60" stroke="currentColor" strokeWidth="3" />
+                              <line x1="50" y1="45" x2="75" y2="45" stroke="currentColor" strokeWidth="3" />
+                              <rect x="10" y="60" width="15" height="15" />
+                              <rect x="42.5" y="60" width="15" height="15" />
+                              <rect x="67.5" y="60" width="15" height="15" />
+                            </svg>
+                          </div>
+                          {/* Vertical Divider */}
+                          <div className="w-px bg-gray-400 dark:bg-gray-600 self-stretch"></div>
+                          {/* Framework List */}
+                          <div className="flex-1">
+                            <ul className="space-y-3 text-gray-800 dark:text-gray-200">
+                              <li className="flex items-center gap-2">
+                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
+                                <span className="text-lg font-medium">Profitability</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
+                                <span className="text-lg font-medium">Market Entry</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
+                                <span className="text-lg font-medium">Market Sizing</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
+                                <span className="text-lg font-medium">Growth</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
+                                <span className="text-lg font-medium">Go-To-Market</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
+                        Select a framework to begin your case interview practice
                       </p>
                     </div>
                   </div>

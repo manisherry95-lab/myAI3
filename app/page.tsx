@@ -217,7 +217,9 @@ export default function Chat() {
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-400 dark:from-purple-600 dark:to-pink-600 rounded-full blur-2xl opacity-50 animate-pulse"></div>
                     <div className="relative bg-gradient-to-br from-purple-500 to-pink-500 dark:from-purple-700 dark:to-pink-700 rounded-full p-8 shadow-2xl">
-                      <Sparkles className="w-20 h-20 text-white" />
+                      <svg className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C10.5 2 9 2.5 8 3.5C7 4.5 6.5 6 6.5 7.5V9H5C4 9 3 10 3 11V13C3 14 4 15 5 15H6.5V16.5C6.5 18 7 19.5 8 20.5C9 21.5 10.5 22 12 22C13.5 22 15 21.5 16 20.5C17 19.5 17.5 18 17.5 16.5V15H19C20 15 21 14 21 13V11C21 10 20 9 19 9H17.5V7.5C17.5 6 17 4.5 16 3.5C15 2.5 13.5 2 12 2M8.5 7.5C8.5 6.5 8.8 5.5 9.5 4.8C10.2 4.1 11.1 3.8 12 3.8C12.9 3.8 13.8 4.1 14.5 4.8C15.2 5.5 15.5 6.5 15.5 7.5V9H8.5V7.5M9.5 12C10.3 12 11 12.7 11 13.5C11 14.3 10.3 15 9.5 15C8.7 15 8 14.3 8 13.5C8 12.7 8.7 12 9.5 12M14.5 12C15.3 12 16 12.7 16 13.5C16 14.3 15.3 15 14.5 15C13.7 15 13 14.3 13 13.5C13 12.7 13.7 12 14.5 12M9 17H15V18H9V17Z" />
+                      </svg>
                     </div>
                   </div>
 

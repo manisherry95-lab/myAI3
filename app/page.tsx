@@ -236,57 +236,65 @@ export default function Chat() {
                     </p>
                   </div>
 
-                  {/* Case Frameworks Card */}
-                  <div className="w-full max-w-2xl mt-8">
-                    <div className="bg-white/80 dark:bg-black/60 backdrop-blur-md rounded-2xl p-8 border border-white/40 dark:border-white/20 shadow-lg">
-                      <div className="bg-gradient-to-r from-blue-100 to-blue-50 dark:from-blue-900/50 dark:to-blue-800/50 rounded-xl p-6 mb-6 border-2 border-blue-200 dark:border-blue-700">
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Case Frameworks</h2>
-                        <div className="flex items-start gap-8">
-                          {/* Framework Icon */}
-                          <div className="flex-shrink-0">
-                            <svg className="w-20 h-20 text-gray-900 dark:text-white" viewBox="0 0 100 100" fill="currentColor">
-                              <rect x="35" y="15" width="30" height="15" />
-                              <line x1="50" y1="30" x2="50" y2="45" stroke="currentColor" strokeWidth="3" />
-                              <line x1="50" y1="45" x2="25" y2="45" stroke="currentColor" strokeWidth="3" />
-                              <line x1="50" y1="45" x2="50" y2="60" stroke="currentColor" strokeWidth="3" />
-                              <line x1="50" y1="45" x2="75" y2="45" stroke="currentColor" strokeWidth="3" />
-                              <rect x="10" y="60" width="15" height="15" />
-                              <rect x="42.5" y="60" width="15" height="15" />
-                              <rect x="67.5" y="60" width="15" height="15" />
-                            </svg>
-                          </div>
-                          {/* Vertical Divider */}
-                          <div className="w-px bg-gray-400 dark:bg-gray-600 self-stretch"></div>
-                          {/* Framework List */}
-                          <div className="flex-1">
-                            <ul className="space-y-3 text-gray-800 dark:text-gray-200">
-                              <li className="flex items-center gap-2">
-                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
-                                <span className="text-lg font-medium">Profitability</span>
-                              </li>
-                              <li className="flex items-center gap-2">
-                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
-                                <span className="text-lg font-medium">Market Entry</span>
-                              </li>
-                              <li className="flex items-center gap-2">
-                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
-                                <span className="text-lg font-medium">Market Sizing</span>
-                              </li>
-                              <li className="flex items-center gap-2">
-                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
-                                <span className="text-lg font-medium">Growth</span>
-                              </li>
-                              <li className="flex items-center gap-2">
-                                <span className="w-2 h-2 bg-gray-800 dark:bg-white rounded-full"></span>
-                                <span className="text-lg font-medium">Go-To-Market</span>
-                              </li>
-                            </ul>
-                          </div>
+                  {/* Case Frameworks Interactive Cards */}
+                  <div className="w-full max-w-4xl mt-8">
+                    <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
+                      Choose Your Case Framework
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {/* Profitability */}
+                      <div className="group bg-gradient-to-br from-emerald-400/20 to-teal-500/20 dark:from-emerald-600/30 dark:to-teal-700/30 backdrop-blur-md rounded-2xl p-6 border border-emerald-300/40 dark:border-emerald-600/40 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:-translate-y-2 hover:scale-105">
+                        <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                          <span className="text-2xl">💰</span>
                         </div>
+                        <h3 className="font-bold text-xl text-gray-800 dark:text-white mb-2">Profitability</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Analyze costs, revenues, and profit drivers</p>
                       </div>
-                      <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
-                        Select a framework to begin your case interview practice
-                      </p>
+                      
+                      {/* Market Entry */}
+                      <div className="group bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-600/30 dark:to-indigo-700/30 backdrop-blur-md rounded-2xl p-6 border border-blue-300/40 dark:border-blue-600/40 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:-translate-y-2 hover:scale-105">
+                        <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                          <span className="text-2xl">🚪</span>
+                        </div>
+                        <h3 className="font-bold text-xl text-gray-800 dark:text-white mb-2">Market Entry</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Evaluate new market opportunities</p>
+                      </div>
+                      
+                      {/* Market Sizing */}
+                      <div className="group bg-gradient-to-br from-purple-400/20 to-pink-500/20 dark:from-purple-600/30 dark:to-pink-700/30 backdrop-blur-md rounded-2xl p-6 border border-purple-300/40 dark:border-purple-600/40 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:-translate-y-2 hover:scale-105">
+                        <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                          <span className="text-2xl">📊</span>
+                        </div>
+                        <h3 className="font-bold text-xl text-gray-800 dark:text-white mb-2">Market Sizing</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Calculate total addressable market</p>
+                      </div>
+                      
+                      {/* Growth */}
+                      <div className="group bg-gradient-to-br from-orange-400/20 to-red-500/20 dark:from-orange-600/30 dark:to-red-700/30 backdrop-blur-md rounded-2xl p-6 border border-orange-300/40 dark:border-orange-600/40 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:-translate-y-2 hover:scale-105">
+                        <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                          <span className="text-2xl">📈</span>
+                        </div>
+                        <h3 className="font-bold text-xl text-gray-800 dark:text-white mb-2">Growth</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Explore expansion strategies</p>
+                      </div>
+                      
+                      {/* Go-To-Market */}
+                      <div className="group bg-gradient-to-br from-cyan-400/20 to-blue-500/20 dark:from-cyan-600/30 dark:to-blue-700/30 backdrop-blur-md rounded-2xl p-6 border border-cyan-300/40 dark:border-cyan-600/40 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:-translate-y-2 hover:scale-105">
+                        <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                          <span className="text-2xl">🎯</span>
+                        </div>
+                        <h3 className="font-bold text-xl text-gray-800 dark:text-white mb-2">Go-To-Market</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Design launch and distribution strategies</p>
+                      </div>
+                      
+                      {/* Custom Framework */}
+                      <div className="group bg-gradient-to-br from-violet-400/20 to-fuchsia-500/20 dark:from-violet-600/30 dark:to-fuchsia-700/30 backdrop-blur-md rounded-2xl p-6 border border-violet-300/40 dark:border-violet-600/40 shadow-lg hover:shadow-2xl transition-all cursor-pointer hover:-translate-y-2 hover:scale-105">
+                        <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-fuchsia-600 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                          <span className="text-2xl">✨</span>
+                        </div>
+                        <h3 className="font-bold text-xl text-gray-800 dark:text-white mb-2">Custom Case</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Build your own framework approach</p>
+                      </div>
                     </div>
                   </div>
                 </div>

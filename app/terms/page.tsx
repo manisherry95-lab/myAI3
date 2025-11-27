@@ -37,7 +37,7 @@ export default function Terms() {
                         <li className="text-gray-700">
                             <span className="font-semibold">Third-Party Involvement:</span>{" "}
                             The AI Chatbot utilizes multiple third-party platforms and
-                            vendors, some of which operate outside the United States. Your
+                            vendors, some of which operate outside India. Your
                             inputs may be transmitted, processed, and stored by these
                             third-party systems. As such, confidentiality, security, and privacy
                             cannot be guaranteed, and data transmission may be inherently
@@ -179,13 +179,12 @@ export default function Terms() {
                 <div className="space-y-4">
                     <h3 className="text-xl font-semibold">Governing Law and Jurisdiction</h3>
                     <p className="text-gray-700">
-                        These terms are governed by the laws of the State of North Carolina,
-                        United States. Additional jurisdictions may apply for users outside
-                        the United States, subject to applicable local laws. In case of
-                        conflicts, the laws of North Carolina shall prevail to the extent
-                        permissible. Any disputes arising under or in connection with these
-                        terms shall be subject to the exclusive jurisdiction of the courts
-                        located in North Carolina.
+                        These terms are governed by and shall be interpreted in accordance with the laws of the 
+    Republic of India, specifically the laws applicable within the State of Maharashtra.
+    Users outside India are responsible for compliance with their local laws, where applicable.
+    In the event of any dispute arising from or related to these terms, the courts of Mumbai,
+    Maharashtra — including the High Court of Judicature at Bombay — shall have exclusive 
+    jurisdiction.
                     </p>
                 </div>
 
